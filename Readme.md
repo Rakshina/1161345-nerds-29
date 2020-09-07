@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Katerina Rakshina](https://up.htmlacademy.ru/htmlcss/29/user/1161345).
-* Наставник: `Неизвестно`.
+* Наставник: `Дарья Воздраганова` https://htmlacademy.ru/profile/id1227143.
 
 ---
 
