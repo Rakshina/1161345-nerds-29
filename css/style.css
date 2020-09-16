@@ -40,6 +40,7 @@ img {
 /* Main navigation */
 
 .main-navigation {
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -75,7 +76,7 @@ img {
   line-height: 55px;
 }
 
-.slider p {
+.slider {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -92,6 +93,37 @@ img {
 }
 
 .services-list h3 {
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
+}
+
+/* index-column-1 */
+
+.header-about {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+/* Button */
+.button,
+.button-yellowe,
+.button-green {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--basic-red);
+  border: none;
+  text-align: center;
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+
+.button-yellowe {
+  background-color: var(--basic-yellowe);
 }
