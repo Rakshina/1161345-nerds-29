@@ -1,0 +1,97 @@
+:root {
+  --basic-grey: #eeeeee;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-yellowe: #efc849;
+  --basic-grey-socials: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+}
+
+/* Global */
+
+body {
+  min-width: 1158;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-blcack);
+  background-color: var(--basic-white);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.main-header {
+  background-color: var(--basic-grey);
+  color: var(--basic-black);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+  background-color: transparent;
+}
+
+.site-navigation,
+.basket {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.basket a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+  background-color: var(--basic-red);
+}
+
+/* Slider */
+
+.tagline {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Services-list */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
