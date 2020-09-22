@@ -206,10 +206,13 @@ img {
 
 .button-green:active {
   background-color: var(--besic-darkgreen);
+  color: var(--basic-transparent-button);
+
 }
 
 .button-yellowe {
   background-color: var(--basic-lightyellowe);
+
 }
 
 .button-yellowe:hover,
@@ -219,6 +222,8 @@ img {
 
 .button-yellowe:active {
   background-color: var(--basic-darkyellowe);
+  color: var(--basic-transparent-button);
+
 }
 
 /* companies */
@@ -406,5 +411,5 @@ img {
   box-shadow: var(--basic-box-shadow);
 }
 
-/* Logo */
-
+/* Grid */
+mi
