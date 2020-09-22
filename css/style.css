@@ -26,6 +26,7 @@
   --basic-red-socials: linear-gradient(0deg, #e74246, #e74246), #ffffff;
   --basic-darkred-socials: linear-gradient(0deg, #d7373b, #d7373b), #ffffff;
   --basic-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  --basic-transparent-button: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -191,6 +192,7 @@ img {
   background-color: var(--basic-darkred);
   mix-blend-mode: normal;
   box-shadow: var(--basic-box-shadow);
+  color: var(--basic-transparent-button);
 }
 
 .button-green {
