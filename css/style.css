@@ -32,7 +32,7 @@
 /* Global */
 
 body {
-  min-width: 1158;
+  min-width: 1160;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -59,6 +59,29 @@ img {
   color: var(--basic-black);
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Container */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 5px solid rgba(4, 250, 147, 0.7);
+  outline-offset: -5px;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -74,6 +97,26 @@ img {
 .site-navigation,
 .basket {
   list-style: none;
+}
+
+/* Logo */
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  width: 1158px;
+  margin: o auto;
+  outline: 5px solid rgba(3, 118, 226, 1);
+  outline-offset: -5px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.basket {
+  margin: 0;
 }
 
 /* User navigation */
@@ -108,25 +151,43 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 80px;
+  outline: 5px solid rgba(209, 228, 38, 0.7);
+  outline-offset: -5px;
 }
 
 .slider-list {
   list-style: none;
 }
-/* Services-list */
+/* Row-services */
 
-.services-list {
-  list-style: none;
+.row-services {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(168, 73, 132, 0.7);
+  outline-offset: -5px;
 }
-
-.services-item {
-  text-align: center;
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services-list h3 {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
+}
+
+/* About */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 73px;
+  outline: 5px solid rgba(170, 96, 219, 0.7);
+  outline-offset: -5px;
 }
 
 /* index-column-1 */
@@ -207,12 +268,10 @@ img {
 .button-green:active {
   background-color: var(--besic-darkgreen);
   color: var(--basic-transparent-button);
-
 }
 
 .button-yellowe {
   background-color: var(--basic-lightyellowe);
-
 }
 
 .button-yellowe:hover,
@@ -223,16 +282,24 @@ img {
 .button-yellowe:active {
   background-color: var(--basic-darkyellowe);
   color: var(--basic-transparent-button);
-
 }
 
 /* companies */
 
+.companies {
+  outline: 5px solid rgba(50, 51, 15, 0.7);
+  outline-offset: -5px;
+}
+
 .companies-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   text-decoration: none;
+  margin-bottom: 80px;
 }
-.companies img:hover {
+.companies img:hover,
+.companies-list img:focus {
   opacity: 0.3;
 }
 
@@ -262,16 +329,30 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey-contacts);
+  margin-bottom: 68px;
+  outline: 5px solid rgba(83, 186, 218, 0.7);
+  outline-offset: -5px;
 }
 
 /* Social button */
 
-.footer-social ul {
+.row-social {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.social-list {
   list-style: none;
+  outline: 5px solid rgba(83, 186, 218, 0.7);
+  outline-offset: -5px;
 }
 
 .social-button {
   color: var(--basic-black);
+}
+
+.social-list-item {
+  margin: 0;
 }
 
 /* Text-footer */
@@ -287,6 +368,8 @@ img {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  outline: 5px solid rgba(233, 177, 177, 0.7);
+  outline-offset: -5px;
 }
 
 /* visually-hidden */
@@ -299,18 +382,35 @@ img {
   margin: -1px;
 }
 
-/* Main-catalog */
+/*Page-catalog */
 
-.main-catalog h1 {
+.page-catalog h1 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
 }
 
+.catalog-bar {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin-bottom: 60px;
+}
+
 /* catalog-list-sorter" */
 
+/* Filters */
+.filters-row {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
 /* Sorter-list */
+
+.catalog-list-sorter {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
 .sorter-list {
   list-style: none;
@@ -347,6 +447,12 @@ img {
 }
 
 /* Catalog-list */
+
+.catalog {
+  outline: 5px solid rgba(0, 110, 255, 0.7);
+  outline-offset: -5px;
+  margin-left: 140px;
+}
 
 .catalog-list {
   list-style: none;
@@ -410,6 +516,3 @@ img {
   background-color: var(--basic-darkgrey);
   box-shadow: var(--basic-box-shadow);
 }
-
-/* Grid */
-mi
