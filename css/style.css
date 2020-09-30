@@ -222,6 +222,11 @@ img {
   line-height: 24px;
 }
 
+.index-column-2 dd{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .features-list dt {
   font-weight: bold;
   font-size: 45px;
@@ -239,6 +244,7 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
+
 
 /* Button */
 .button,
@@ -317,8 +323,8 @@ img {
 
 .companies-list-item {
   width: 298px;
-  margin-top: 65px;
-  margin-bottom: 63px;
+  margin: auto;
+
 }
 
 .companies img:hover,
@@ -479,7 +485,8 @@ img {
 .catalog {
   outline: 5px solid rgba(0, 110, 255, 0.7);
   outline-offset: -5px;
-  margin-left: 140px;
+  margin-left: auto;
+  min-height: 760px;
 }
 
 .catalog-list {
@@ -497,9 +504,8 @@ img {
   outline: 5px solid rgba(51, 255, 0, 0.7);
   outline-offset: -5px;
   width: 359px;
-  min-height: 578px;
-  margin-right: 40px;
-  margin-bottom: 72px;
+  margin-right: 42px;
+  margin-top: 72px;
 }
 
 .catalog-list-item:nth-child(2n) {
