@@ -31,8 +31,13 @@
 
 /* Global */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  min-width: 1160;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -75,9 +80,9 @@ img {
 /* Container */
 
 .container {
-  width: 1158px;
+  width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 140px;
   outline: 5px solid rgba(4, 250, 147, 0.7);
   outline-offset: -5px;
 }
@@ -179,12 +184,25 @@ img {
   outline-offset: -5px;
 }
 .services-list {
-  display: grid;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0;*/
+}
+
+.services-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services-list li:last-child {
+  margin-right: 0;
 }
 
 .services-list h3 {
@@ -222,7 +240,7 @@ img {
   line-height: 24px;
 }
 
-.index-column-2 dd{
+.index-column-2 dd {
   display: flex;
   margin: 0;
   padding: 0;
@@ -244,7 +262,6 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
-
 
 /* Button */
 .button,
@@ -324,7 +341,6 @@ img {
 .companies-list-item {
   width: 298px;
   margin: auto;
-
 }
 
 .companies img:hover,
@@ -486,7 +502,7 @@ img {
   outline: 5px solid rgba(0, 110, 255, 0.7);
   outline-offset: -5px;
   margin-left: auto;
-  min-height: 760px;
+  width: 760px;
 }
 
 .catalog-list {
