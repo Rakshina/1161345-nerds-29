@@ -67,8 +67,8 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row-services">
+      <div class="row-services">
+        <div class="container">
           <ul class="services-list">
             <li class="services-item">
               <img src="img/illustration1.jpg" width="300" height="146" alt="Интернет магазин Nerds">
@@ -97,7 +97,7 @@
       <h2 class="visually-hidden">О нас</h2>
       <div class="container about-wrapper">
         <div class="index-column-1">
-          <p><span class="header-about">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</span></p>
+          <p class="header-about-text"><span class="header-about">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</span></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h4>Выполняем заказы на разработку:</h4>
           <ul class="about-list list-reset">
@@ -135,15 +135,15 @@
         <h2 class="visually-hidden">Производители</h2>
         <ul class="companies-list list-reset">
           <li class="companies-list-item">
-            <a class="companies-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт НТML academy"><img src="img/htmlacademy.svg" width="199" height="68" alt="HTML academy"></a>
+            <a class="companies-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт НТML academy"><img src="img/htmlacademy.png" width="199" height="68" alt="HTML academy"></a>
           </li>
           <li class="companies-list-item">
-            <a class="companies-link" href="#" aria-label="Перейти на сайт barbershop borodinski"><img src="img/borodinski.svg" width="209" height="90" alt="Barbershop Borodinski" /></a>
+            <a class="companies-link" href="#" aria-label="Перейти на сайт barbershop borodinski"><img src="img/borodinski.png" width="209" height="90" alt="Barbershop Borodinski" /></a>
           </li>
           <li class="companies-list-item">
-            <a class="companies-link" href="#" aria-label="Перейти на сайт pink"><img src="img/pink.svg" width="185" height="52" alt="PINK" /></a>
+            <a class="companies-link" href="#" aria-label="Перейти на сайт pink"><img src="img/pink.png" width="185" height="52" alt="PINK" /></a>
           </li>
-          <li class="companies-list-item"><a class="companies-link" href="#" aria-label="Перейти на сайт mishka"><img src="img/mishka.svg" width="173" height="84" alt="MISHKA" /></a>
+          <li class="companies-list-item"><a class="companies-link" href="#" aria-label="Перейти на сайт mishka"><img src="img/mishka.png" width="173" height="84" alt="MISHKA" /></a>
           </li>
         </ul>
       </div>
@@ -153,11 +153,13 @@
   <footer class="page-footer main-footer">
     <section class="footer-contacts">
       <div class="container">
-        <div class="contacts-background">
-          <h3><span class="heder-contacts">Nёrds design studio</span></h3>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 тел.</p>
-          <a class="phone" href="tel:+78122757575" aria-label="Набраь номер телефона">+7 (812) 275-75-7</a>
-          <a class="button" href="#" aria-label="Написать сообщение">Напишите нам</a>
+        <div class="contacts-wrap">
+          <div class="contacts-background">
+            <h3><span class="heder-contacts">Nёrds design studio</span></h3>
+            <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <a class="phone" href="tel:+78122757575" aria-label="Набраь номер телефона">тел. +7 (812) 275-75-7</a>
+            <a class="button button-contacts" href="#" aria-label="Написать сообщение">Напишите нам</a>
+          </div>
         </div>
       </div>
     </section>
@@ -173,7 +175,7 @@
           </ul>
           <div class="text-footer">
             <p><span class="text-footer-header">Давайте дружить, это выгодно!</span></p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <p class="text">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
       </div>
@@ -185,9 +187,9 @@
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback">
         <p>
-        <label for="feedback-name">
-          Ваше имя:<br><input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
-        </label>
+          <label for="feedback-name">
+            Ваше имя:<br><input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+          </label>
         </p>
         <p>
           <label for="feedback-email">
