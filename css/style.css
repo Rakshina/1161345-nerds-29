@@ -49,7 +49,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: var(--basic-blcack);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -342,8 +342,7 @@ img {
 /* Logo */
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr min-content;
+  display: flex;
   width: 1158px;
   margin: 0 auto;
 }
@@ -352,11 +351,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-height: 30px;
+  margin-left: 182.13px;
 }
 
 .main-header-logo {
   margin-top: 49px;
-  width: 160px;
+  display: block;
+  height: 65px;
 }
 
 .main-header-logo:active {
@@ -365,16 +366,33 @@ img {
 
 /* User navigation */
 
-.site-navigation a,
-.basket a {
+.site-navigation a {
   display: block;
-  padding: 20px 20px;
-  margin-top: 55px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 5px;
   color: var(--basic-black);
+  margin-left: 0px;
+  margin-top: 55px;
 }
 
-.site-navigation a:nth-last-child(4) {
-  margin-right: 45px;
+.basket {
+  margin-left: 230px;
+}
+
+.basket a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  color: var(--basic-black);
+  margin-top: 55px;
+}
+
+.site-navigation a:nth-child(4n) {
+  padding-right: 0px;
 }
 
 .site-navigation a:hover,
@@ -397,18 +415,18 @@ img {
 .basket-item::before {
   content: "";
   position: absolute;
-  top: 29px;
-  left: 15px;
+  top: 28px;
+  left: -5px;
   width: 15px;
   height: 11px;
-  background-image: url("../img/bascet.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.basket .basket-item {
+.basket-item {
   position: relative;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 /* Slider */
@@ -422,6 +440,7 @@ img {
   background-repeat: no-repeat;
   background-position: right;
   min-height: 431px;
+  min-width: 760px;
 }
 
 .site-wrapper-1 {
@@ -452,6 +471,8 @@ img {
   border-radius: 50%;
   cursor: pointer;
   border: none;
+  top: 3px;
+  right: 15px;
 }
 
 .slider-controls .current::before {
@@ -461,7 +482,7 @@ img {
   height: 8px;
   border: 2px solid var(--basic-slider-controls);
   border-radius: 50%;
-  bottom: 26%;
+  bottom: 30%;
   left: 26%;
 }
 
@@ -495,8 +516,11 @@ img {
 
 .slide-button {
   margin-top: 38px;
-  padding: 16px;
-  min-width: 250px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 240px;
   min-height: 50px;
 }
 
@@ -504,7 +528,6 @@ img {
 
 .services-list {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 80px 0;
   border-bottom: 2px solid var(--basic-lightgrey);
@@ -527,7 +550,7 @@ img {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 25px;
+  margin-top: 18px; /* Уточнить откуда растояние 7px */
   margin-bottom: 16px;
 }
 
@@ -542,9 +565,8 @@ img {
 
 .about {
   padding-top: 39px;
-  padding-bottom: 75px;
+  padding-bottom: 60px;
 }
-
 .about-wrapper {
   display: flex;
   position: relative;
@@ -559,22 +581,22 @@ img {
 .index-column-1 h4 {
   text-transform: uppercase;
   margin-bottom: 23px;
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 .header-about {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
 }
 
 .header-about-text {
   margin-bottom: 32px;
   margin-top: 0;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .about-list {
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 .servisec-list-item {
@@ -592,8 +614,8 @@ img {
 }
 
 .servisec-list-item:nth-child(2) {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* Index-column-2 */
@@ -608,11 +630,12 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
+  margin-top: 29px;
+  padding-left: 19px;
+  padding-right: 10px;
 }
 
 .index-column-2 img {
-  margin-bottom: 21px;
 }
 
 .index-column-2 dd {
@@ -624,7 +647,7 @@ img {
   font-size: 45px;
   line-height: 64px;
   padding-bottom: 10px;
-  margin-right: 22px;
+  margin-right: 23px;
 }
 
 .features {
@@ -642,7 +665,7 @@ img {
 }
 .features-bar dl {
   display: flex;
-  margin-top: 37px;
+  margin-top: 31px;
 }
 
 /* companies */
@@ -651,15 +674,20 @@ img {
   display: flex;
   border-bottom: 2px solid var(--basic-lightgrey);
   border-top: 2px solid var(--basic-lightgrey);
-  padding-top: 46px;
-  padding-bottom: 46px;
+  padding-bottom: 34px;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 50px;
+  align-items: center;
 }
 
 .companies-list-item {
   position: relative;
-  width: 298px;
-  margin: auto;
-  text-align: center;
+}
+
+.companies-list-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .companies-list-item:not(:last-child)::before {
@@ -668,7 +696,7 @@ img {
   width: 2px;
   height: 52px;
   background-color: var(--basic-lightgrey);
-  right: -3px;
+  right: -35px;
 }
 
 .companies-list-item:nth-child(2)::before {
@@ -696,7 +724,6 @@ img {
 
 .page-footer {
   margin-top: 80px;
-  margin-bottom: ;
 }
 
 .heder-contacts {
@@ -707,6 +734,16 @@ img {
   text-transform: uppercase;
   align-items: center;
   margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.contacts-background h3 {
+  margin-top: 9px;
+  margin-bottom: 21px;
+}
+
+.contacts-background p {
+  margin-bottom: 19px;
 }
 
 .phone {
@@ -722,6 +759,9 @@ img {
 
 .button-contacts {
   margin-top: 37.29px;
+  padding-top: 17px;
+  min-width: 219px;
+  min-height: 50px;
 }
 
 /* Footer-contacts */
@@ -750,8 +790,8 @@ img {
 .contacts-wrap::before {
   content: "";
   position: absolute;
-  top: 40px;
-  left: 679px;
+  top: 32px;
+  left: 681px;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
@@ -823,17 +863,18 @@ img {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 10px;
 }
 
 .text-footer {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 140px;
+  margin-left: 130px;
 }
 
 .text-footer p {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 /*Page-catalog */
