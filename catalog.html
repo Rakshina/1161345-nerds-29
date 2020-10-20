@@ -35,7 +35,9 @@
 
   <main class="page-catalog">
     <div class="header-catalog">
-      <h1>Магазин готовых шаблонов</h1>
+      <div class="container">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
     </div>
     <div class="container">
       <div class="catalog-bar">
@@ -86,34 +88,24 @@
                 <legend>Особенности:</legend>
                 <ul class="list-reset">
                   <li class="filter-option filter-checkbox">
-                    <label class="check option">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox">
-                      Слайдер
-                    </label>
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slaider" id="filter-slaider" checked>
+                    <label for="filter-slaider">Слайдер</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <label class="check option">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox">
-                      Блок преимуществ
-                    </label>
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantage" id="filter-advantage">
+                    <label for="filter-advantage">Блок преимуществ</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <label class="check option">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox">
-                      Новости
-                    </label>
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+                    <label for="filter-news">Новости</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <label class="check option">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox">
-                      Галерея
-                    </label>
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="filter-gallery">Галерея</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <label class="check option">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox">
-                      Корзина
-                    </label>
+                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+                    <label for="filter-basket">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
@@ -134,8 +126,8 @@
             </ul>
 
             <ul class="list-reset toggle">
-              <li class="sorter-down" href="#" aria-label="Вниз" </li>
-              <li class="sorter-up" href="#" aria-label="Вверх" </li>
+              <li class="sorter-down"></li>
+              <li class="sorter-up"></li>
             </ul>
           </div>
 
@@ -146,7 +138,7 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">Sedona</a></h3>
-                <p>Информационный сайт<br> для туристов</span></p>
+                <p>Информационный сайт<br> для туристов</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -156,7 +148,7 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">Pink app</a></h3>
-                <p>Продуктовый лендинг<br> приложения для iOS и Android</span></p>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -167,7 +159,7 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">Barbershop</a></h3>
-                <p>Сайт салона красоты.<br> Для мужчин, да</span></p>
+                <p>Сайт салона красоты.<br> Для мужчин, да</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -177,7 +169,7 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">Mishka</a></h3>
-                <p>Интернет-магазин<br> вязанных игрушек</span></p>
+                <p>Интернет-магазин<br> вязанных игрушек</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -187,7 +179,7 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">A plus</a></h3>
-                <p>Лендинг курсов повышения<br> валификации</span></p>
+                <p>Лендинг курсов повышения<br> валификации</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -197,7 +189,17 @@
               </div>
               <div class="catalog-desc-wrap">
                 <h3 class="catalog-title"><a href="">Кваст</a></h3>
-                <p>Промо-сайт производителя<br> крафтового кваса</span></p>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <a class="button" href="">9 900 р</a>
+              </div>
+            </li>
+            <li class="catalog-list-item">
+              <div class="catalog-img-wrap">
+                <img src="img/catalog/pink.jpg" width="359" height="578" alt="сайт Pink">
+              </div>
+              <div class="catalog-desc-wrap">
+                <h3 class="catalog-title"><a href="">Pink app</a></h3>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
                 <a class="button" href="">9 900 р</a>
               </div>
             </li>
@@ -247,6 +249,29 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback">
+        <p>
+          <label for="feedback-name">
+            Ваше имя:<br><input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label for="feedback-email">
+            Ваш email:<br><input type="email" name="email" id="feedback-email" placeholder="email@example.com">
+          </label>
+        </p>
+      </div>
+      <p>Текст письма:
+        <textarea name="comment" rows="4" placeholder="В свободной форме"></textarea><br>
+      </p>
+      <input type="submit" class="button" value="Отправить">
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>
