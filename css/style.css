@@ -136,7 +136,7 @@ img {
   width: 960px;
   min-height: 590px;
   padding-left: 100px;
-  /*display: none;*/
+  display: none;
 }
 
 .modal-feedback h2 {
@@ -776,6 +776,7 @@ img {
 
 .footer-contacts {
   background-image: url("../img/map.jpg");
+  background-position: -88px 0;
   min-height: 416px;
   position: relative;
   padding-top: 54px;
@@ -1012,6 +1013,7 @@ img {
 .filter ul {
   line-height: 19px;
   color: var(--basic-grey-filter-focus);
+  margin-bottom: 47px;
 }
 
 .checkbox {
@@ -1026,12 +1028,11 @@ img {
 }
 
 .filter-button {
-  margin-top: 29px;
   padding-right: 29px;
   padding-left: 28px;
   min-width: 260px;
-  padding-top: 17px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 14px;
   background-color: var(--basic-lightgrey);
   color: var(--basic-black);
 }
@@ -1215,8 +1216,8 @@ h3.list-reset {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
-  /*text-align: center;*/
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .catalog-list-item {
@@ -1327,7 +1328,7 @@ h3.catalog-title {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .pagination-item a {
@@ -1373,5 +1374,5 @@ h3.catalog-title {
 }
 
 .catalog-footer {
-  margin-top: 58px;
+  margin-top: 60px;
 }
