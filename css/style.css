@@ -131,12 +131,15 @@ img {
   width: 761px;
 }
 
+.modal {
+  display: none;
+}
+
 .modal-feedback {
   top: 60px;
   width: 960px;
   min-height: 590px;
   padding-left: 100px;
-  display: none;
 }
 
 .modal-feedback h2 {
@@ -209,6 +212,10 @@ img {
 .modal-feedback input[type="email"]:invalid,
 .modal-feedback textarea:invalid {
   border: 2px solid var(--basic-red);
+}
+
+.modal-show {
+  display: block;
 }
 /* Modal-close */
 
@@ -1073,9 +1080,32 @@ fieldset .radio {
   opacity: 0.5;
 }
 
+.filter-input-radio:checked + label:hover::after,
+.filter-input-radio:checked + label:focus::after,
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before,
+.filter-input-radio + label:hover::after,
+.filter-input-radio + label:focus::after,
+.filter-input-checkbox:checked + label:hover::after,
+.filter-input-checkbox:checked + label:focus::after,
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox + label:focus::before,
+.filter-input-checkbox + label:hover::after,
+.filter-input-checkbox + label:focus::after {
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label::after,
+.filter-input-radio:disabled + label::before,
+.filter-input-checkbox:disabled + label::after,
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.3;
+}
+
 /* Filters-checkbox */
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox + label::before,
+.filter-input-checkbox:checked + label:hover::after {
   content: "";
   position: absolute;
   left: -37px;

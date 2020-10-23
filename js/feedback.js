@@ -1,5 +1,6 @@
-consol feedBack = document.querySelector(".button-contacts");
+const feedback = document.querySelector(".button-contacts");
 
-feedBack.addEventListener("click", function (evt) {
+feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
+  console.log("Hello");
 });
