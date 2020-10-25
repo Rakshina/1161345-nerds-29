@@ -510,7 +510,7 @@ img {
   border: 2px solid var(--basic-slider-controls);
   border-radius: 50%;
   bottom: 30%;
-  left: 26%;
+  left: 32%;
 }
 
 .slider-controls {
@@ -718,11 +718,25 @@ img {
   width: 2px;
   height: 52px;
   background-color: var(--basic-lightgrey);
-  right: -35px;
+  right: -52px;
+}
+
+.companies-list-item:nth-child(3)::before {
+  left: 241px;
+  top: -7px;
 }
 
 .companies-list-item:nth-child(2)::before {
   top: 16px;
+  left: 252px;
+}
+
+.companies-list li:nth-child(3) {
+  margin-left: -12px;
+}
+
+.companies-list li:nth-child(2) {
+  margin-left: -15px;
 }
 
 .companies img {
