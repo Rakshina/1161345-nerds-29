@@ -464,27 +464,34 @@ img {
 
 .slider-wrapper {
   position: relative;
+}
+
+.slider-item {
   background-repeat: no-repeat;
   background-position: right;
   min-height: 431px;
   min-width: 760px;
+  display: none;
 }
 
 .site-wrapper-1 {
   background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .site-wrapper-2 {
   background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .site-wrapper-3 {
   background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.slide {
-  display: none;
-}
 .slide-current {
   display: block;
 }
@@ -692,51 +699,36 @@ img {
 
 /* companies */
 
+.companies-link {
+  position: relative;
+  width: 298px;
+  display: flex;
+  justify-content: center;
+}
+
 .companies-list {
   display: flex;
   border-bottom: 2px solid var(--basic-lightgrey);
   border-top: 2px solid var(--basic-lightgrey);
   padding-bottom: 34px;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 40px;
   padding-top: 50px;
   align-items: center;
 }
 
-.companies-list-item {
-  position: relative;
-}
-
-.companies-list-item:not(:first-child) {
-  margin-left: 10px;
-}
-
-.companies-list-item:not(:last-child)::before {
+.companies-link::after {
   position: absolute;
   content: "";
   width: 2px;
   height: 52px;
   background-color: var(--basic-lightgrey);
-  right: -52px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.companies-list-item:nth-child(3)::before {
-  left: 241px;
-  top: -7px;
-}
-
-.companies-list-item:nth-child(2)::before {
-  top: 16px;
-  left: 252px;
-}
-
-.companies-list li:nth-child(3) {
-  margin-left: -12px;
-}
-
-.companies-list li:nth-child(2) {
-  margin-left: -15px;
+.companies-list-itam:last-child a::after {
+  display: none;
 }
 
 .companies img {
@@ -1106,6 +1098,11 @@ fieldset .radio {
   background-color: var(--basic-grey-filter-focus);
   border-radius: 50%;
   opacity: 0.5;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-checkbox:focus + label::before {
+  background-color: red;
 }
 
 .filter-input-radio:checked + label:hover::after,

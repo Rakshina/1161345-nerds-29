@@ -1,27 +1,16 @@
-const slider = document.querySelector(".slider-wrapper");
-const buttonFirst = document.querySelector(".first-slider");
-const buttonSecond = document.querySelector(".second-slider");
-const buttonThird = document.querySelector(".third-sleider");
+/*
+const slidesToggleControls = document.querySelector(".slider-controls");
+const sliderItems = document.querySelectorAll(".slider-item");
 
-buttonFirst.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  slider.classList.remove("site-wrapper-2");
-  slider.classList.remove("site-wrapper-3");
-  slider.classList.add("site-wrapper-1");
+slidesToggleControls.addEventListener("click", function(evt) {
+
+ sliderItems.forEach(function (item) {
+   item.classList.remove("slide-current");
 });
 
-buttonSecond.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  slider.classList.remove("site-wrapper-1");
-  slider.classList.remove("slide-current");
-  slider.classList.remove("site-wrapper-3");
-  slider.classList.add("site-wrapper-2");
+currenttBtnID = evt.target.id;
+showNum = currenttBtnID.replace("slide-", "");
+showSlide = "site-wrapper-" + showNum;
+document.qetElemntsByClassName(showSlide)[0].classList.add("slide-current");
 });
-
-buttonThird.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  slider.classList.remove("site-wrapper-1");
-  slider.classList.remove("slide-current");
-  slider.classList.remove("site-wrapper-2");
-  slider.classList.add("site-wrapper-3");
-});
+*/
