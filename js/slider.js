@@ -14,5 +14,3 @@ showSlide = "site-wrapper-" + showNum;
 document.qetElemntsByClassName(showSlide)[0].classList.add("slide-current");
 });
 */
-/*
-*/

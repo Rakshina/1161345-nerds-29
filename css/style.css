@@ -32,6 +32,7 @@
   --basic-transparent-button: rgba(255, 255, 255, 0.3);
   --basic-black-form: #283136;
   --basic-slider-controls: #c1c1c1;
+  --basic-focus: #010a8d;
 }
 
 /* Global */
@@ -866,7 +867,8 @@ iframe {
 
 .social-button:focus,
 .social-button:hover {
-  background-color: var(--basic-red);
+  outline: none;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #2f7cc0;
 }
 
 .social-button:active {
@@ -1102,7 +1104,8 @@ fieldset .radio {
 
 .filter-input-radio:focus + label::before,
 .filter-input-checkbox:focus + label::before {
-  background-color: red;
+  outline: none;
+  box-shadow: 0 0 0 1px var(--basic-white), 0 0 0 4px var(--basic-focus);
 }
 
 .filter-input-radio:checked + label:hover::after,
@@ -1272,13 +1275,16 @@ h3.list-reset {
   margin: 0;
   padding: 0;
   justify-content: space-between;
-  gap: 30px;
+}
+
+.catalog-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .catalog-list-item {
   position: relative;
   width: 359px;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
 }
 
 .catalog-list-item::before {
@@ -1383,7 +1389,7 @@ h3.catalog-title {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 21px;
+  margin-top: 52px;
 }
 
 .pagination-item a {
