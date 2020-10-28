@@ -1,6 +1,6 @@
 const feedback = document.querySelector(".button-contacts");
 const feedbackPopup = document.querySelector(".modal-feedback");
-const close = document.querySelector(".modal-close");
+const close = feedbackPopup.querySelector(".modal-close");
 const namePopup = feedbackPopup.querySelector("[name=name]");
 const formPopup = feedbackPopup.querySelector(".feedback-form");
 const name = feedbackPopup.querySelector("[name=name]");
