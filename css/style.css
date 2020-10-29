@@ -207,7 +207,7 @@ img {
 .modal-feedback input[type="email"]:focus,
 .modal-feedback textarea:focus {
   border: 2px solid black;
-} /* Не могу убрать синий бордер*/
+}
 
 .modal-feedback input[type="text"]:invalid,
 .modal-feedback input[type="email"]:invalid,
@@ -467,6 +467,7 @@ img {
 }
 
 .slider-item {
+  position: relative;
   background-repeat: no-repeat;
   background-position: right;
   min-height: 431px;
@@ -1436,7 +1437,6 @@ h3.catalog-title {
 .catalog-footer {
   margin-top: 60px;
 }
-
 /* Animations */
 
 @keyframes bounce {
@@ -1477,4 +1477,8 @@ h3.catalog-title {
   80% {
     transform: translateX(10px);
   }
+}
+
+iframe {
+  width: 100%;
 }

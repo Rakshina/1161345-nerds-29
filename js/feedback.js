@@ -23,17 +23,16 @@ feedback.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.remove("modal-show");
-  feedbackPopup.classList.remove("modal-error");
 });
 
 formPopup.addEventListener("submit", function (evt) {
   if (!name.value || !email.value) {
     evt.preventDefault();
     feedbackPopup.classList.add("modal-error");
-    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-    feedbackPopup.classList.remove("modal-error");
   } else {
+    if (isStorageSupport) {
     localStorage.setItem("name", name.value);
+    }
   }
 });
 
@@ -48,7 +47,6 @@ window.addEventListener("keydown", function (evt) {
     if (feedbackPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       feedbackPopup.classList.remove("modal-show");
-      feedbackPopup.classList.remove("modal-error");
     }
   }
 });
