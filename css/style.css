@@ -206,7 +206,7 @@ img {
 .modal-feedback input[type="text"]:focus,
 .modal-feedback input[type="email"]:focus,
 .modal-feedback textarea:focus {
-  border: 2px solid black;
+  border: 2px solid var(--basic-black);
 }
 
 .modal-feedback input[type="text"]:invalid,
