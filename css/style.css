@@ -284,6 +284,10 @@ img {
   padding: 10px 25px;
 }
 
+.button-toggle {
+  display: none;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--basic-red);
@@ -1238,6 +1242,28 @@ ul.list-reset.toggle {
   margin-top: 9px;
 }
 
+.button-up {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-down {
+  position: absolute;
+  top: 415px;
+  right: 80px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 .sorter-down {
   background-image: url("../img/catalog/icon-down-dir.svg");
   width: 11px;
@@ -1353,7 +1379,7 @@ h3.list-reset {
 }
 
 .catalog-desc-wrap {
-  display: none;
+  opacity: 0;
   position: absolute;
   width: 360px;
   min-height: 231px;
@@ -1386,8 +1412,10 @@ h3.catalog-title {
   padding-bottom: 15px;
 }
 
-.catalog-list-item:hover .catalog-desc-wrap {
+.catalog-list-item:hover .catalog-desc-wrap,
+.catalog-list-item:focus-within .catalog-desc-wrap {
   display: block;
+  opacity: 1;
 }
 
 /* Pagination */
